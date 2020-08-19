@@ -7,7 +7,7 @@ RUN sed -i "s/archive.ubuntu.com/mirrors.bfsu.edu.cn/g" /etc/apt/sources.list \
 
 RUN apt-get install -y cmake autoconf automake \
   gnuradio gnuradio-dev osmo-sdr gr-osmosdr git \
-  rtl-sdr librtlsdr-dev  libosmosdr-dev libosmocore \
+  rtl-sdr librtlsdr-dev libosmosdr-dev libosmocore \
   libosmocore-dev libboost-all-dev libcppunit-dev \
   swig doxygen liblog4cpp5-dev python-scipy python-scapy \
   python-mysqldb python-docutils libfftw3-3 wireshark-gtk firefox
@@ -28,3 +28,6 @@ RUN git clone https://github.com/steve-m/kalibrate-rtl.git /tmp/kalibrate-rtl \
   && make -j4 \
   && make install \
   && rm -rf /tmp/kalibrate-rtl
+
+RUN apt-get remove --purge -y cmake autoconf automake git \
+  && apt-get --purge autoremove -y
