@@ -18,7 +18,7 @@ Install docker-ce, example given on Ubuntu 20.04 LTS Linux
 Deploy.
 
 ```
-[tony@localhost ~]$ docker run -i -t -d \
+[000@cli~]$ docker run -i -t -d \
  --name GSM \
  --restart always \
  -p 5900:5900 \
@@ -30,16 +30,8 @@ Deploy.
  bclswl0827/gsm-sniffing-docker:latest
 ```
 
-## Connect
-
-### Via VNC
-
+### Connect Via HTTP
 ```
-[Your IP]:5900
+http://0.0.0.0:6080/
 ```
 
-### Via HTTP
-
-```
-http://[Your IP]:6080
-```
