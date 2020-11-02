@@ -9,7 +9,7 @@ RUN apt-get install -y cmake autoconf automake \
   gnuradio gnuradio-dev osmo-sdr gr-osmosdr git \
   rtl-sdr librtlsdr-dev libosmosdr-dev libosmocore \
   libosmocore-dev libboost-all-dev libcppunit-dev \
-  swig doxygen liblog4cpp5-dev python-scipy python-scapy \
+  swig doxygen liblog4cpp5-dev python3-scipy python3-scapy \
   python-mysqldb python-docutils libfftw3-3 wireshark-gtk firefox
 
 RUN git clone https://github.com/ptrkrysik/gr-gsm.git /tmp/gr-gsm \
