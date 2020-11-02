@@ -1,18 +1,18 @@
-# gsm-sniffing-docker
+# Make For HackRF One
 
-Docker with noVNC, gr-gsm, wireshark, kalibrate-rtl pre-installed.
+Combine Harvester For GSM SMS using Docker, noVNC, gr-gsm, wireshark, kalibrate-rtl, Ubuntu Linux 
 
 # Quick Start
 
-Install docker-ce, example given on Fedora Linux.
+Install docker-ce, example given on Ubuntu 20.04 LTS Linux 
 
 ```
-[tony@localhost ~]$ sudo dnf install curl
-[tony@localhost ~]$ curl -fsSL get.docker.com -o get-docker.sh
-[tony@localhost ~]$ sudo sh get-docker.sh
-[tony@localhost ~]$ sudo groupadd docker
-[tony@localhost ~]$ sudo usermod -aG docker $USER
-[tony@localhost ~]$ sudo systemctl enable docker && sudo systemctl start docker
+[000@cli~]$ sudo apt-get install curl
+[000@cli~]$ curl -fsSL get.docker.com -o get-docker.sh
+[000@cli~]$ sudo sh get-docker.sh
+[000@cli~]$ sudo groupadd docker
+[000@cli~]$ sudo usermod -aG docker $USER
+[000@cli~]$ sudo systemctl enable docker && sudo systemctl start docker
 ```
 
 Deploy.
