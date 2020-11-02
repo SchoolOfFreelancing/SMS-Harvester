@@ -1,4 +1,4 @@
-# Make For HackRF One
+# Made For HackRF One
 
 Combine Harvester For GSM SMS using Docker, noVNC, gr-gsm, wireshark, kalibrate-rtl, Ubuntu Linux 
 
