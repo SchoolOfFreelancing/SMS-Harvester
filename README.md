@@ -5,7 +5,7 @@ Combine Harvester For GSM SMS using Docker, noVNC, gr-gsm, wireshark, kalibrate-
 # Quick Start
 
 Install docker-ce, example given on Ubuntu 20.04 LTS Linux 
-
+[000@cli~]$ https://github.com/SchoolOfFreelancing/SMS-Harvester.git
 [000@cli~]$ git clone this repo
 [000@cli~]$ sudo apt-get install curl
 [000@cli~]$ curl -fsSL get.docker.com -o get-docker.sh
