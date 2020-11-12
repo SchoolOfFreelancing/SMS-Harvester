@@ -18,6 +18,7 @@ Install docker-ce, example given on Ubuntu 20.04 LTS Linux
 Deploy.
 
 ```
+[000@cli~]$ sudo -i
 [000@cli~]$ git clone this repo
 [000@cli~]$ cd SMS-Harvester 
 [000@cli~]$ docker run -i -t -d \
