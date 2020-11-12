@@ -14,8 +14,7 @@ Install docker-ce, example given on Ubuntu 20.04 LTS Linux
 [000@cli~]$ sudo systemctl enable docker && sudo systemctl start docker
 ```
 
-Deploy.
-
+Deploy
 ```
 [000@cli~]$ git clone this repo
 [000@cli~]$ cd SMS-Harvester
