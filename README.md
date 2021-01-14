@@ -1,6 +1,9 @@
 # Made For HackRF One
 
-Combine Harvester For GSM SMS using Docker, noVNC, gr-gsm, wireshark, kalibrate-rtl, Ubuntu Linux 
+Combine Harvester For GSM SMS using Docker, noVNC, gr-gsm, wireshark, kalibrate-rtl, Ubuntu Linux. This tolls will be used for analyze GSM network vaurnability test for cell towers not for bad hacking. 
+
+Caution: School Of Freelancing will not responsiable for wrong use for this repository. Only use this repository for R&D and PEN TEST purpose.  
+
 
 # Quick Start
 
