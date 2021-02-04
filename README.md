@@ -10,21 +10,21 @@ Caution: School Of Freelancing will not responsiable for wrong use for this repo
 Install docker-ce, example given on Ubuntu 20.04 LTS Linux 
 
 ```
-[000@cli~]$ sudo apt-get install curl
-[000@cli~]$ curl -fsSL get.docker.com -o get-docker.sh
-[000@cli~]$ sudo sh get-docker.sh
-[000@cli~]$ sudo groupadd docker
-[000@cli~]$ sudo usermod -aG docker $USER
-[000@cli~]$ sudo systemctl enable docker && sudo systemctl start docker
+sudo apt-get install curl
+curl -fsSL get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo systemctl enable docker && sudo systemctl start docker
 ```
 
 Deploy.
 
 ```
-[000@cli~]$ sudo -i
-[000@cli~]$ git clone this repo
-[000@cli~]$ cd SMS-Harvester 
-[000@cli~]$ docker run -i -t -d \
+sudo -i
+git clone https://github.com/SchoolOfFreelancing/SMS-Harvester.git
+cd SMS-Harvester 
+docker run -i -t -d \
  --name GSM \
  --restart always \
  -p 5900:5900 \
