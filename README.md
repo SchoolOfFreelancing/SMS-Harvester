@@ -27,6 +27,14 @@ Deploy.
 sudo -i
 git clone https://github.com/SchoolOfFreelancing/SMS-Harvester.git
 cd SMS-Harvester 
+
+git init
+git add .
+git commit -m "first-commit"
+git pull
+```
+
+```
 docker run -i -t -d \
  --name GSM \
  --restart always \
