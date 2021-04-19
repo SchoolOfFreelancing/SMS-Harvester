@@ -4,40 +4,23 @@ Combine Harvester For GSM SMS using Docker, noVNC, gr-gsm, wireshark, kalibrate-
 
 Caution: School Of Freelancing will not responsiable for wrong use for this repository. Only use this repository for R&D and PEN TEST purpose.  
 
-
 # Quick Start
 
-Install docker-ce, example given on Ubuntu 20.04 LTS Linux 
+Install docker-ce, example given on Fedora Linux.
 
 ```
-sudo apt-get install curl
-curl -fsSL get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo groupadd docker
-sudo usermod -aG docker $USER
-sudo systemctl start docker
-sudo systemctl enable docker  
-sudo systemctl restart docker
-sudo systemctl status docker
-``
+[tony@localhost ~]$ sudo dnf install curl
+[tony@localhost ~]$ curl -fsSL get.docker.com -o get-docker.sh
+[tony@localhost ~]$ sudo sh get-docker.sh
+[tony@localhost ~]$ sudo groupadd docker
+[tony@localhost ~]$ sudo usermod -aG docker $USER
+[tony@localhost ~]$ sudo systemctl enable docker && sudo systemctl start docker
+```
 
 Deploy.
 
 ```
-sudo -i
-git clone https://github.com/SchoolOfFreelancing/SMS-Harvester.git
-cd SMS-Harvester 
-```
-
-```
-git init
-git add .
-git commit -m "first-commit"
-git pull
-```
-
-```
-docker run -i -t -d \
+[tony@localhost ~]$ docker run -i -t -d \
  --name GSM \
  --restart always \
  -p 5900:5900 \
@@ -49,8 +32,15 @@ docker run -i -t -d \
  bclswl0827/gsm-sniffing-docker:latest
 ```
 
-### Connect Via HTTP
+## Connect
+
+### Via VNC
+
 ```
-http://0.0.0.0:6080/
+[Your IP]:5900
 ```
 
+### Via HTTP
+
+```
+http://[Your IP]:6080
